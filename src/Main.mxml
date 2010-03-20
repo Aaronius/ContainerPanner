@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+		xmlns:aaronhardy="com.aaronhardy.*"
+		layout="absolute"
+		backgroundColor="#CFCFCF" viewSourceURL="srcview/index.html">
+	
+	<aaronhardy:ContainerPanner id="panner" 
+			container="{containerToPan}" 
+			upCursor="@Embed('pan_up.png')"
+			downCursor="@Embed('pan_down.png')"
+			panEnabled="{panningOnRadio.selected}"/>
+	
+	<mx:VBox top="35" right="35" bottom="35" left="35">
+		<mx:HBox verticalAlign="middle">
+			<mx:Label text="Panning:"/>
+			<mx:RadioButtonGroup id="panningRadioGroup"/>
+			<mx:RadioButton id="panningOnRadio" 
+					group="{panningRadioGroup}" label="On"
+					selected="true"/>
+			<mx:RadioButton id="panningOffRadio" 
+					group="{panningRadioGroup}" label="Off"/>
+		</mx:HBox>
+		
+		<mx:Canvas id="containerToPan" 
+				backgroundColor="#FFFFFF" 
+				width="100%" height="100%">
+			<mx:Label x="0" y="0" text="0,0"/>
+			<mx:Label x="200" y="0" text="200,0"/>
+			<mx:Label x="400" y="0" text="400,0"/>
+			<mx:Label x="600" y="0" text="600,0"/>
+			<mx:Label x="800" y="0" text="800,0"/>
+			<mx:Label x="1000" y="0" text="1000,0"/>
+			
+			<mx:Label x="0" y="200" text="0,200"/>
+			<mx:Label x="200" y="200" text="200,200"/>
+			<mx:Label x="400" y="200" text="400,200"/>
+			<mx:Label x="600" y="200" text="600,200"/>
+			<mx:Label x="800" y="200" text="800,200"/>
+			<mx:Label x="1000" y="200" text="1000,200"/>
+			
+			<mx:Label x="0" y="400" text="0,400"/>
+			<mx:Label x="200" y="400" text="200,400"/>
+			<mx:Label x="400" y="400" text="400,400"/>
+			<mx:Label x="600" y="400" text="600,400"/>
+			<mx:Label x="800" y="400" text="800,400"/>
+			<mx:Label x="1000" y="400" text="1000,400"/>
+			
+			
+			<mx:Label x="0" y="600" text="0,600"/>
+			<mx:Label x="200" y="600" text="200,600"/>
+			<mx:Label x="400" y="600" text="400,600"/>
+			<mx:Label x="600" y="600" text="600,600"/>
+			<mx:Label x="800" y="600" text="800,600"/>
+			<mx:Label x="1000" y="600" text="1000,600"/>
+			
+			<mx:Label x="0" y="800" text="0,800"/>
+			<mx:Label x="200" y="800" text="200,800"/>
+			<mx:Label x="400" y="800" text="400,800"/>
+			<mx:Label x="600" y="800" text="600,800"/>
+			<mx:Label x="800" y="800" text="800,800"/>
+			<mx:Label x="1000" y="800" text="1000,800"/>
+			
+			<mx:Label x="0" y="1000" text="0,1000"/>
+			<mx:Label x="200" y="1000" text="200,1000"/>
+			<mx:Label x="400" y="1000" text="400,1000"/>
+			<mx:Label x="600" y="1000" text="600,1000"/>
+			<mx:Label x="800" y="1000" text="800,1000"/>
+			<mx:Label x="1000" y="1000" text="1000,1000"/>
+		</mx:Canvas>
+	</mx:VBox>
+</mx:Application>
